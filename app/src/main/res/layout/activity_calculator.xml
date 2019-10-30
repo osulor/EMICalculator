@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+
+
+    <TextView
+        android:id="@+id/loan_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="LOAN AMOUNT:"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/loan_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:max="50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loan_textView"
+        tools:layout_editor_absoluteY="70dp" />
+
+
+
+    <TextView
+        android:id="@+id/years_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="YEARS:"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/loan_seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <SeekBar
+        android:id="@+id/years_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:max="15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/years_textView" />
+
+    <TextView
+        android:id="@+id/interest_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="INTEREST RATE:"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/years_seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <SeekBar
+        android:id="@+id/interest_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:max="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interest_textView" />
+
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:background="#345834"
+        android:onClick="calculateButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
