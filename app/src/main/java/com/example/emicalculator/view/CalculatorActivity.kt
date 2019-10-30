@@ -1,16 +1,13 @@
-package com.example.emicalculator
+package com.example.emicalculator.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.SeekBar
-import android.widget.TextView
-import android.widget.Toast
+import com.example.emicalculator.R
 import com.example.emicalculator.util.Constants
 import kotlinx.android.synthetic.main.activity_calculator.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_picture.*
 
 class CalculatorActivity : AppCompatActivity() {
 
@@ -75,7 +72,7 @@ class CalculatorActivity : AppCompatActivity() {
 
 
 
-        intent = Intent(this,SummaryActivity::class.java)
+        intent = Intent(this, SummaryActivity::class.java)
         val emiVal = emiFinal.toString()
         intent.putExtra(Constants.EMI_KEY, emiVal)
         startActivity(intent)

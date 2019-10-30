@@ -1,9 +1,9 @@
-package com.example.emicalculator
+package com.example.emicalculator.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.emicalculator.R
 import com.example.emicalculator.util.Constants
-import kotlinx.android.synthetic.main.activity_picture.*
 import kotlinx.android.synthetic.main.activity_summary.*
 
 class SummaryActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.emicalculator
+package com.example.emicalculator.view
 
 import android.app.Activity
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
 import android.widget.Toast
+import com.example.emicalculator.R
 import com.example.emicalculator.util.Constants
 import kotlinx.android.synthetic.main.activity_picture.*
 
@@ -51,7 +52,7 @@ class PictureActivity : AppCompatActivity() {
 
     fun nextSecondButtonClicked(view: View){
 
-        intent = Intent(this,CalculatorActivity::class.java)
+        intent = Intent(this, CalculatorActivity::class.java)
         startActivity(intent)
 
     }
